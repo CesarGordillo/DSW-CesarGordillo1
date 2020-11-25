@@ -1,0 +1,35 @@
+.titulo{
+    text-align: center;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+.menu{
+    text-align: center;
+    padding: 20px;
+    background-color: #f08429;
+    text-emphasis-color: #005883;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+.subtitulo{
+    text-align: left;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    text-decoration: solid;
+    color: #005883
+}
+.body{
+    text-align: left;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+.text{
+    padding: 10px;
+    text-align: justify;
+    text-size-adjust: Arial 12; 
+    text-emphasis-color: #F47920    
+}
+.text2{
+    text-align: center;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    text-emphasis-color: #F47920
+}
+.imagen{
+    text-emphasis-color: #005883;
+}

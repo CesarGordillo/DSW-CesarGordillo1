@@ -1,0 +1,115 @@
+<!DOCTYPE html >
+<html  lang = " en ">
+<head>
+    <meta  charset = " UTF-8 " >
+    <meta  name = " viewport " content = " width = device-width, initial-scale = 1.0 " >
+    <tittle> CONCEPTOS1 </tittle>
+    <link rel = " hoja de estilo " href = " misestilos.css " >
+</head>
+<body>
+    <h1  class = " titulo " > AUTOEVALUACION1 </h1>
+    <div  class = " menu ">
+        <a  href = " INICIO.HTML " > INICIO </a>
+
+        
+        <a  href = " CONCEPTOS1.HTML " > CONCEPTOS1 </a>
+
+
+        <a  href = " CONCEPTOS2.HTML " > CONCEPTOS2 </a>
+
+
+        <a  href = " RECURSOS1.HTML " > RECURSOS1 </a>
+
+
+        <a  href = " RECURSOS2.HTML " > RECURSOS2 </a>
+
+
+        <a  href = " AUTOEVALUACION1.HTML " > AUTOEVALUACION1 </a>
+
+
+        <a  href = " AUTOEVALUACION2.HTML " > AUTOEVALUACION2 </a>
+
+
+        <a  href = " index.html " > AUTOR </a>
+    </div>
+</body>
+<h2  class = " titulo " > GIT INIT </ h2 >
+<texto>
+    Configura un directorio para que sea monitorizado por Git. Para ello, configura el directorio de trabajo,
+    compuesto por los archivos del proyecto, el índice o área de preparación y un repositorio local donde se almacenarán los compromisos.
+    En relación a esto, en git existen varias localizaciones a diferenciar en un proyecto:
+    Directorio de trabajo (o árbol de trabajo): Es el conjunto de files que forman el proyecto en un 
+    determinado momento de la historia del mismo, los cuales se han extraído del repositorio y están listos para usar una conveniencia.
+    Índice (área de preparación): Representa la zona donde se ubican los ficheros modificados del proyecto, 
+    que serán incluidos en el siguiente compromiso (fotografía del proyecto).
+    Repositorio (.git): Se trata del lugar en el que git almacena en modo de base de datos, 
+    toda la información (metadatos) del proyecto así como su evolución, albergando todas las ramas y los commits que forman la historia del proyecto. 
+</texto>
+<img  src = " Locations.PNG " alt = " Pryecto " >
+
+<h3  class = " titulo " > GIT ADD </h3 >
+<texto >
+    Añade archivos sin seguimiento y modificados al índice. Conviene saber que en git,
+    un fichero que forma parte del proyecto puede estar en los siguientes estados:
+    untracked: No se encuentra monitorizado.
+    unmodified: Se encuentra monitorizado pero no ha sido modificado.
+    modificado: Es un fichero monitorizado y modificado.
+    staged: El fichero se encuentra listo para ser incluido en el próximo commit.
+</texto >
+<img  src = " Git_Add.PNG " alt = " Adicion " >
+
+<h4  class = " titulo " > GIT COMMIT </ h4 >
+<texto >
+    Realiza una nueva "fotografía" del proyecto en su estado actual. De esta manera, se crea un nuevo compromiso en la historia del proyecto.
+
+          git commit -m "descripción"
+</texto >
+<img  src = " Git_Commit.PNG " alt = " Confirmar " >
+
+<h5  class = " titulo " > SUCURSAL GIT </h5 >
+<texto >
+    Permite manejar y gestionar las ramas existentes en el repositorio.
+    git branch --all Muestra las distintas ramas existentes en el proyecto, locales y remotas. La rama actual local,
+    la que se encuentra seleccionada (check out) se muestra con un asterisco *.
+    La rama remota por defecto, se indica mediante la referencia HEAD. En el caso siguiente,
+    se trataría de origin / master, con lo que nos podemos referir a ella en los comandos como simplemente origin:
+</texto >
+    <img  src = " Git_Branch_All.PNG " alt = " TODOS " >
+<texto >
+    De esta manera, si necesitásemos por ejemplo subir cambios a la rama remota desarrollar del ejemplo 
+    anterior de manera constante, podríamos definir que el remoto por defecto fue origen / desarrollo, 
+    y así ahorrar a la hora de escribir los comandos trabajo. Se utilizaría el comando:
+
+          desarrollo de origen de set-head remoto de git
+</texto >
+    <img  src = " Git_Branch_All_Set_Head.PNG " alt = " Git_All " >
+<texto >
+    git branch <nombrerama> permite crear una etiqueta de rama en el commit actual, es decir, permite crear una
+        nueva rama.
+
+        git branch -d <nombrerama> permite eliminar una etiqueta de rama o branch label (no elimina commits).
+            Normalmente es utilizado este comando tras haber realizado un merge de la rama a eliminar en la 
+            rama principal. Si lo aplicamos a una rama antes de hacer un mege, git nos lo impedirá,
+            indicando que utilicemos -D para realizarlo verdaderamente. Una vez hecho, los commits asociados a
+            la rama eliminada quedarán huérfanos, entendiéndose que deseamos desechar el trabajo realizado. 
+            Si finalmente fue un error, es posible deshacer el borrado de la rama mediante git reflog, donde 
+            podremos consultar el id o sha-1 del último commit de la rama eliminada y así ejectuar
+        git checkout -b <nombrerama>  <sha-1  commit> para restablecer la situación inicial.
+</texto >
+
+<h6  class = " titulo " > GIT TAG </h6 >
+<texto >
+    Permite gestinar las diferentes etiquetas ubicadas en los distintos commits
+
+    git tag permite visualizar las etiquetas de tipo "anotado" existentes en el repositorio.
+
+    git tag -a [-m <mensaje > | -F <fichero > ] <nombretag > [ <commit > ] permite crear una etiqueta anotada en el
+    cometer indicado. Si no se especifica commit se utilizará el que apunte HEAD.
+
+    git tag -d <nombretag > permite eliminar la etiqueta indicada.
+</texto >
+<img  src = " Tag.PNG " alt = " TAG " >
+
+<a href = " http://cessor.blogspot.com/2018/03/git-y-github-conceptos-basicos.html " > Estudiar, ANALIZAR, Aprender </a>
+
+</html >
